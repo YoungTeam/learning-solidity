@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "min",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"03/Library.sol": "MathLib"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"03/Library.sol": {
+			"keccak256": "0x32c9bdd444e2027399698a025856706541ca561a00fe3af420996d7ab0d84d59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ac232de96eda45451ba099196130fa4efb14cd147b2158641aa684fc9d12cec6",
+				"dweb:/ipfs/QmaPjFanCEPKp1Zw65H3gkiUjZQVJrCsxyBiU5RauEHhEM"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getSign",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"02/sign.sol": "Sign"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"02/sign.sol": {
+			"keccak256": "0x3b501bba2c924e6dd62c7852651b267cb554d44f7893948319afc7b5e66482c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e570f07e9974c3937fd8294689500af1ffac58cd6dec316ccdd76ee706da520",
+				"dweb:/ipfs/QmcnipFzesM7UKvtwsjyc811E57pa7Z5wFnfzr3LRvXF26"
+			]
+		}
+	},
+	"version": 1
+}
