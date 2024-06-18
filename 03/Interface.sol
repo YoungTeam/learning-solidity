@@ -1,9 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+interface ICounter{
+    function count() external view returns (uint);
+    function update(uint value) external;
+    function increment() external;
+}
 
-
-contract Counter{
+contract Counter is ICounter{
     
     uint public count;
 
@@ -14,12 +18,6 @@ contract Counter{
     function increment() public{
             count++;
     }
-}
-
-interface ICounter{
-    function count() external view returns (uint);
-    function update(uint value) external;
-    function increment() external;
 }
 
 contract CallCounter{
