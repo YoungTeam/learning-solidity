@@ -91,18 +91,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"02/MyOwnable.sol": {
-			"keccak256": "0xc1e6e3c44e498340da269bbb9b009a936b15fad7199ad01347b4b0812007fb1f",
+			"keccak256": "0x03454096ee1540c2cb6f90a7c3e0c88768c66a46c292c41bf7af0d71fab7a9f7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://42641ae2a4a0d7e4a60bb03f33a8f79664380a42732a41c2c8cd8b04837b8eef",
-				"dweb:/ipfs/QmdoDyWWasLiiVQGaHyJ7qo53XEFaVqKdoCSRoHuppBEMu"
+				"bzz-raw://989f1d85d7d6143e79a61aee426d9ac19df26d259a585ba544e5a1ebf4c4784a",
+				"dweb:/ipfs/QmUfsWNyGcXjUGqXuKLHHBBD8sc7iHHKVLnd5D41jHYrJL"
 			]
 		}
 	},
