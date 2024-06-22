@@ -6,7 +6,7 @@ contract GasGolf{
 
     uint256 public total;
 
-    function optimizeGasUsage(uint[] memory arr) external view returns(uint){ //memory->calldata 
+    function optimizeGasUsage(uint[] memory arr) external returns(uint){ //memory->calldata 
 
         for(uint i = 0;i<arr.length;i+=1){ 
             if(arr[i]<100 && arr[i]%2==0){  //short circle
