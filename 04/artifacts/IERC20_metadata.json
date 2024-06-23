@@ -9,86 +9,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					}
-				],
-				"name": "allowance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "balanceOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "recipient",
 						"type": "address"
 					},
@@ -152,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"04/ERC20.sol": "IERC20"
+			"04/CrowdFund.sol": "IERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -166,12 +86,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"04/ERC20.sol": {
-			"keccak256": "0x8f88f0c3479dc979d2995e1c3a8a95bb34edf97f54117cbacbd375385ccb0173",
+		"04/CrowdFund.sol": {
+			"keccak256": "0x5662a11641f9991ec8a7c4afe028a624df7d345841047a7121ef8953011f5b80",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f64b1bdb4d068c6f848e1a43c59ce2d4147863756c29254febab962dcde1eec4",
-				"dweb:/ipfs/QmWr261WzE6vD5uFjiVU2MBLKXNQ7RunSoFXbkqVdTvM75"
+				"bzz-raw://4df634046cfdaaf07577310d68b25398b772fe37b0ac80c0d045432a727ecedc",
+				"dweb:/ipfs/QmeFbWEfaVaEPgqi2TWA9XZcrgd2abtqWuyU94Cku8Ux4W"
 			]
 		}
 	},
