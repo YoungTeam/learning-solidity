@@ -69,7 +69,7 @@ contract TimeLock {
 
         if (
             _timestamp < block.timestamp + MIN_DELAY ||
-            _timestamp < block.timestamp + MAX_DELAY
+            _timestamp > block.timestamp + MAX_DELAY
         ) {
             revert NotInRangeError(block.timestamp, _timestamp);
         }

@@ -80,7 +80,7 @@ contract ERC20 is IERC20{
         return true;
     }
 
-    function mint(uint amount) external {
+    function mint(uint amount) public {
         balanceOf[msg.sender]+=amount;
         totalSupply+= amount;
 

@@ -2,3 +2,4 @@ artifacts
 .states
 *.png
 .states/vm-cancun/state.json
+node_modules
