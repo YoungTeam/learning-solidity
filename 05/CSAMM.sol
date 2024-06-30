@@ -17,5 +17,9 @@ contract CSAMM{
         token0 = IERC20(_token0);
         token1 = IERC20(_token1);
     }
+
+    function mint(address _to,uint amount){
+        
+    }
     
 }
