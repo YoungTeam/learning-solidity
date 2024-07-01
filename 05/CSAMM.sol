@@ -19,7 +19,8 @@ contract CSAMM{
     }
 
     function mint(address _to,uint amount){
-
+        balanceOf[_to]+=amount;
+        totalSupply += amount;
     }  
     
 }
