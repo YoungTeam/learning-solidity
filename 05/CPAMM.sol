@@ -52,7 +52,7 @@ contract CPAMM {
 
         //calculate amount out (including fees)
         //y*dx /(x+dx) = dy
-        uint amountInWithFee = (amountIn * 997) / 1000;
+        uint amountInWithFee = (_amountIn * 997) / 1000;
         amountOut = (resOut * amountInWithFee) / (resIn + amountInWithFee);
 
         tokenOut.transfer(msg.sender, amountOut);
@@ -94,28 +94,35 @@ contract CPAMM {
         _update(token0.balanceOf(address(this)),token1.balanceOf(address(this)));
     }
 
-    function removeLiquidity(uint _shares) external returns (uint d0, uint d1) {
+    function removeLiquidity(uint _shares) external returns (uint amount0, uint amount1) {
         /***
-                a = s*L/T
-             */
+            calculate amount0 and amount1
+            dx = s/T*x
+            dy = s/T*y
+        ***/
 
-        d0 = (_shares * reserve0) / totalSupply;
-        d1 = (_shares * reserve1) / totalSupply;
+        uint bal0 = token0.balanceOf(address(this));
+        uint bal1 = token0.balanceOf(address(this));
+        amount0 = _shares/totalSupply*bal0;
+        amount1 = _shares/totalSupply*bal1;
+
+        require(amount0>0 && amount1 >0,"error");
+
         _burn(msg.sender, _shares);
 
-        _update(reserve0 - d0, reserve1 - d1);
+        _update(reserve0 - amount0, reserve1 - amount1);
 
-        if (d0 > 0) {
-            token0.transfer(msg.sender, d0);
+        if (amount0 > 0) {
+            token0.transfer(msg.sender, amount0);
         }
 
-        if (d1 > 0) {
-            token1.transfer(msg.sender, d1);
+        if (amount1 > 0) {
+            token1.transfer(msg.sender, amount1);
         }
     }
 
     // 使用牛顿迭代法计算平方根
-    function sqrt(uint256 x) public pure returns (uint256) {
+    function _sqrt(uint256 x) public pure returns (uint256) {
         if (x == 0) return 0;
         if (x <= 3) return 1;
 
