@@ -77,7 +77,8 @@ contract StakingRewards {
 
     function withdraw(uint _amount) external updateReward(msg.sender){
         require(_amount > 0, "amount >0");
-
+        require(balanceOf[msg.sender] > _amount,"balance > amount");
+        
         balanceOf[msg.sender] -= _amount;
         totalSupply -= _amount;
         stakingToken.transfer(msg.sender, _amount);
