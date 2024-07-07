@@ -5,7 +5,7 @@ contract BitwiseOperators{
 
     function getLastNBits(uint x, uint n) public pure returns(uint){
             uint mask =  (1<< n)-1;
-            return x & mask;
+            return x & mask; 
     }
 
 
