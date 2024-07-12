@@ -164,4 +164,5 @@ contract  MyNFT is ERC721{
         require(msg.sender == _ownerOf[tokenId],"not owner");
         _burn(tokenId);
     }
+    
 }
