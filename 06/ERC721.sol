@@ -154,7 +154,7 @@ contract ERC721 is IERC721 {
 }
 
 
-
+  
 contract  MyNFT is ERC721{
     function mint(address to, uint tokenId) external{
         _mint(to, tokenId);
@@ -165,6 +165,6 @@ contract  MyNFT is ERC721{
         _burn(tokenId);
     }
 
-    
+
     
 }
